@@ -1,10 +1,11 @@
 import React, {Component} from 'react';
+import '../App.css';
 
 class Student2 extends Component {
     state = {  }
     render() { 
         return ( 
-            <div> {this.props.student2 && this.props.student2.name} </div>
+            <div class="students"> {this.props.student2 && this.props.student2.name} </div>
          );
     }
 }
