@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Student from './Components/Student.js'
 import Student2 from './Components/Student2.js'
@@ -47,23 +46,26 @@ class App extends Component {
       }));
       this.state.students2.splice (this.state.students2.indexOf(this.state.pickedStudent2), 1);
       if (this.state.students2.length == 0) {
-        alert (`Running out of students to pick!
-Please refresh your browser!`);
+        alert (`Running out of students to pick.
+Please refresh your browser.`);
       }
     }
 
     render() {
     return (
       <div className="App">
-      <br/>
-      <br/>
+      <div class="Button" id="rep" onClick={this.pickRandomStudent}>
+        <br/><br/><br/><br/>
+        Pick a student with repetition
+        <br/><br/><br/><br/>
         <Student student={this.state.pickedStudent}/>
-        <button onClick={this.pickRandomStudent}>Pick a Student with Repetition</button>
-        <br/>
-        <br/>
+      </div>
+      <div class="Button" id="noRep" onClick={this.pickRandomStudent2}>
+        <br/><br/><br/><br/>
+        Pick a student without repetition
+        <br/><br/><br/><br/>
         <Student2 student2={this.state.pickedStudent2}/>
-        <button onClick={this.pickRandomStudent2}>Pick a Student without Repetition</button>
-        <br/>
+      </div>
       </div>
     );
   }

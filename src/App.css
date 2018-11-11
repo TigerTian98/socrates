@@ -1,43 +1,28 @@
 .App {
-  border-radius: 2vmin;
-  box-shadow: 0 0 2vmin black;
-  height: 300px;
-  left: calc(50vw - 250px);
-  position: absolute;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 5vh;
+  overflow: hidden;
+  user-select: none;
   text-align: center;
-  top: calc(50vh - 150px);
   width: 500px;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-button {
+.Button {
   cursor: pointer;
+  height: 100vh;
+  position: absolute;
+  width: 50vw;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Button:hover {
+  box-shadow: 0 0 10vmin black inset;
+  color: red
+}
+
+#noRep {
+  left: 50vw;
+}
+
+.students {
+  font-size: 10vh;
 }
