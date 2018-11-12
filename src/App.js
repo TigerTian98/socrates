@@ -10,19 +10,29 @@ class App extends Component {
 
       this.state = {
         students: [
-          {name: 'Christian'},
-          {name: 'Matt'},
-          {name: 'Cindy'},
-          {name: 'Xu'},
-          {name: 'Leon'},
+          {name: 'A'},
+          {name: 'B'},
+          {name: 'C'},
+          {name: 'D'},
+          {name: 'E'},
+          {name: 'F'},
+          {name: 'G'},
+          {name: 'H'},
+          {name: 'I'},
+          {name: 'J'}
         ],
 
         students2: [
-          {name: 'Christian'},
-          {name: 'Matt'},
-          {name: 'Cindy'},
-          {name: 'Xu'},
-          {name: 'Leon'},
+          {name: 'A'},
+          {name: 'B'},
+          {name: 'C'},
+          {name: 'D'},
+          {name: 'E'},
+          {name: 'F'},
+          {name: 'G'},
+          {name: 'H'},
+          {name: 'I'},
+          {name: 'J'}
         ],
 
         //our pickFromAll boolean
